@@ -43,3 +43,8 @@ Body
 	"username" : "default",
 	"password" : "dummy"
 }
+
+Desplegar aplicacion usando linea de comandos
+java -jar market\build\libs\market-1.0.jar
+
+java -jar -Dspring.profiles.active=pdn market\build\libs\market-1.0.jar
