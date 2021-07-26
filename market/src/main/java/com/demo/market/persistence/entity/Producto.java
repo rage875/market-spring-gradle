@@ -9,7 +9,7 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
-    private Integer idProduto;
+    private Integer idProducto;
 
     private String nombre;
 
@@ -23,7 +23,7 @@ public class Producto {
     private Double precioVenta;
 
     @Column(name = "cantidad_stock")
-    private Integer catidadStock;
+    private Integer cantidadStock;
 
     private Boolean estado;
 
@@ -31,12 +31,12 @@ public class Producto {
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 
-    public Integer getIdProduto() {
-        return idProduto;
+    public Integer getIdProducto() {
+        return idProducto;
     }
 
-    public void setIdProduto(Integer idProduto) {
-        this.idProduto = idProduto;
+    public void setIdProducto(Integer idProducto) {
+        this.idProducto = idProducto;
     }
 
     public String getNombre() {
@@ -71,12 +71,12 @@ public class Producto {
         this.precioVenta = precioVenta;
     }
 
-    public Integer getCatidadStock() {
-        return catidadStock;
+    public Integer getCantidadStock() {
+        return cantidadStock;
     }
 
-    public void setCatidadStock(Integer catidadStock) {
-        this.catidadStock = catidadStock;
+    public void setCantidadStock(Integer cantidadStock) {
+        this.cantidadStock = cantidadStock;
     }
 
     public Boolean getEstado() {
@@ -87,4 +87,11 @@ public class Producto {
         this.estado = estado;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }
