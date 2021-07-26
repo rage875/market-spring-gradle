@@ -1,0 +1,33 @@
+http://localhost:8090/demo-market/api/products/100
+http://localhost:8090/demo-market/api/purchases/all
+http://localhost:8090/demo-market/api/purchases/client/4546221
+http://localhost:8090/demo-market/api/purchases/save
+
+{
+    "purchaseId": 2,
+    "clientId": "4546221",
+    "date": "2020-08-10T17:30:00",
+    "paymentMethod": "T",
+    "comment": "",
+    "state": "P",
+    "items": [
+        {
+            "productId": 1,
+            "quantity": 10,
+            "total": 3000,
+            "active": true
+        },
+        {
+            "productId": 24,
+            "quantity": 1,
+            "total": 4000,
+            "active": true
+        },
+        {
+            "productId": 27,
+            "quantity": 1,
+            "total": 9000,
+            "active": true
+        }
+    ]
+}
