@@ -31,3 +31,15 @@ http://localhost:8090/demo-market/api/purchases/save
         }
     ]
 }
+
+
+Post http://localhost:8090/demo-market/api/auth/authenticate
+
+Header
+Key Content-Type | Value application/json
+
+Body
+{
+	"username" : "default",
+	"password" : "dummy"
+}
